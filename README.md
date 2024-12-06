@@ -9,7 +9,7 @@
 - 
 - Role - Frontend
 
-- How to reach me : with my [instagram](https://instagram.com/vahidsolimani.dev) and [linkedin](https://linkedin.com/in/vahidsolimani)
+- How to reach me : with my [instagram](https://instagram.com/vahidsolimani.dev) and [linkedin]([https://linkedin.com/in/vahidsolimani](https://www.linkedin.com/in/vahid-solimani-33403a333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
 
 - 
 ![img2](https://github.com/user-attachments/assets/10236941-e7ce-4dad-a541-334cc9c417b2)

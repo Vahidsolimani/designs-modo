@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <header class="w-full bg-black bg-opacity-90  ">
+        <nav class=" w-full container mx-auto  py-2 p-5">
+            <div class="mx-auto w-full *:md:w-1/3 *:text-white flex justify-between p-2 md:p-4">
+                <div class="flex items-center *:text-white *:font-bold gap-x-2 w-3/5">
+                    <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                    <a href="">designsmode</a>
+                </div>
+                <div class="hidden md:flex ">
+                    <ul class="flex justify-center gap-x-4 items-center">
+                        <li class="capitalize"><a class="hover:text-blue-600 transition-all duration-500" href="">apps
+                                <i class="bi text-xs bi-chevron-down"></i></i></a> </li>
+                        <li class="capitalize"><a class="hover:text-blue-600 transition-all duration-500"
+                                href="">Articles <i class="bi text-xs bi-chevron-down"></i></a> </li>
+                    </ul>
+                </div>
+                <div class="flex w-1/5 items-center justify-end gap-x-5">
+                    <a class="hover:text-blue-600  transition duration-500 hidden md:flex capitalize" href="">cart</a>
+                    <a class="hover:text-blue-600  transition duration-500  capitalize" href="">log in</a>
+                </div>
+                <div class="flex flex-wrap  w-1/5 justify-end md:justify-center">
+                    <div onclick="mybox()"
+                        class="boxx md:hidden flex gap-x-1 relative  justify-center items-center w-20  cursor-pointer *:w-[4px] *:h-[20px] *:bg-white *:cursor-pointer *:rounded">
+                        <span class="flex absolute top-1 left-1/2"></span>
+                        <span class="flex absolute top-1 left-1/3"></span>
+                    </div>
+                    <div>
+                        <button
+                            class="capitalize bg-orange-400 py-3 px-10 hidden md:flex rounded hover:bg-orange-600 transition duration-500">
+                            try free</button>
+                    </div>
+                </div>
+
+            </div>
+            <ul id="menu"
+                class=" *:w-full mt-5 -translate-x-[400%] mb-5 *:cursor-pointer *:capitalize md:hidden  *:bg-white flex overflow-hidden transition-all duration-700">
+                <li class="py-3 text-center hover:scale-105 transition duration-500 ">Products</li>
+                <li class="py-3 text-center hover:scale-105 transition duration-500  border-r border-l ">Articles</li>
+                <li class="py-3 text-center hover:scale-105 transition duration-500 ">Account</li>
+            </ul>
+        </nav>
+        <section class="w-full">
+            <div class="container mx-auto p-5 mt-8">
+                <div class="lg:flex *:text-white *:text-center justify-center items-center">
+                    <div class="lg:w-2/5">
+                        <div class="flex flex-wrap">
+                            <h1 class="text-5xl w-full leading-relaxed font-bold font-serif ">Level up your designs
+                                faster</h1>
+                            <div class="flex w-full flex-wrap justify-center items-center  ">
+                                <ul class="flex *:transition *:duration-500  *:text-xl *:font-sans">
+                                    <li onclick="showBox(1)"
+                                        class=" font-bold  leading-relaxed p-2 hover:text-white opacity-50 hover:opacity-100 cursor-pointer duration-500 transition">
+                                        Postcards
+
+                                    </li>
+                                    <li onclick="showBox(2)"
+                                        class=" font-bold  leading-relaxed p-2 hover:text-white opacity-50 hover:opacity-100 cursor-pointer duration-500 transition">
+                                        Slides
+
+                                    </li>
+                                    <li onclick="showBox(3)"
+                                        class=" font-bold  leading-relaxed p-2 hover:text-white opacity-50 hover:opacity-100 cursor-pointer duration-500 transition">
+                                        Startup
+
+                                    </li>
+                                </ul>
+                                <div class="">
+                                    <div id="box-1"
+                                        class=" box hidden  rounded-lg w-full flex-wrap  mt-4 *:my-5 gap-x-2 p-4 bg-slate-800 ">
+                                        <div class="flex gap-x-2">
+                                            <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                                            <p>Postcards</p>
+                                        </div>
+                                        <div class="w-full">
+                                            <p class=" text-justify text-lg">
+                                                Create beautiful, responsive email newsletter design in minutes. No
+                                                coding necessary.
+                                            </p>
+                                        </div>
+                                        <button
+                                            class="capitalize bg-orange-400 py-2 px-8  rounded hover:bg-orange-600 transition duration-500">open
+                                            app</button>
+                                        <button class="capitalize">see more</button>
+                                    </div>
+                                    <div id="box-2"
+                                        class=" box hidden  rounded-lg w-full flex-wrap  mt-4 *:my-5 gap-x-2 p-4 bg-slate-600 ">
+                                        <div class="flex gap-x-2">
+                                            <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                                            <p>Slides</p>
+                                        </div>
+                                        <div class="w-full">
+                                            <p class=" text-justify text-lg">
+                                                Design stunning animated websites in just a few minutes with ready-to-go
+                                                templates & clean code.
+                                            </p>
+                                        </div>
+                                        <button
+                                            class="capitalize bg-orange-400 py-2 px-8  rounded hover:bg-orange-600 transition duration-500">open
+                                            app</button>
+                                        <button class="capitalize">see more</button>
+                                    </div>
+                                    <div id="box-3"
+                                        class=" box hidden  rounded-lg w-full flex-wrap  *:text-black mt-4 *:my-5 gap-x-2 p-4 bg-slate-400 ">
+                                        <div class="flex gap-x-2">
+                                            <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                                            <p>Startup</p>
+                                        </div>
+                                        <div class="w-full">
+                                            <p class=" text-justify text-lg">
+                                                Build responsive Bootstrap landing page templates with pre-designed
+                                                blocks in a no-code editor.
+                                            </p>
+                                        </div>
+                                        <button
+                                            class="capitalize bg-orange-400 py-2 px-8 rounded hover:bg-orange-600 transition duration-500">open
+                                            app</button>
+                                        <button class="capitalize">see more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/5  p-5">
+                        <video class="w-full max-w-4xl h-auto rounded-lg shadow-lg" autoplay muted preload="auto" loop"
+                            src="video/postcards.mp4"></video>
+
+                        <div class="flex justify-evenly gap-x-10 mt-8 items-center">
+
+                            <div onclick="tosee()" class="cursor-pointer">
+                                <i class="bi bi-eye" id="svgwon"></i>
+                                <h4 id="boxwon">0</h4>
+                            </div>
+                            <div onclick="notseeing()" class="cursor-pointer">
+                                <i class="bi bi-eye-slash" id="svgtow"></i>
+
+                                <h4 id="boxtow">0</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="w-full bg-white">
+        <div class="container mx-auto p-5 mt-10">
+            <div
+                class="w-full *:bg-blue-200 gap-x-5 *:rounded-xl *:my-10 *:lg:my-0 items-center justify-between *:p-5  lg:flex ">
+                <div class=" *:my-5">
+                    <h3 class="text-4xl font-bold capitalize">97%</h3>
+                    <p class="text-2xl">of Designmodo customers say their experience is better design tools.</p>
+                </div>
+                <div class=" *:my-5">
+                    <h3 class="text-4xl font-bold capitalize">7.2 hours</h3>
+                    <p class="text-2xl">average time saved creating an email template with Postcards.</p>
+                </div>
+                <div class=" *:my-5">
+                    <h3 class="text-4xl font-bold capitalize">500 hours</h3>
+                    <p class="text-2xl">total average time saved per year by Designmodo clients.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="w-full bg-white">
+        <div class="container p-5 mx-auto text-center">
+            <div class="flex justify-center items-center my-20">
+                <h2 class="md:text-5xl text-2xl font-serif font-bold ">Simple products for <span
+                        class="text-blue-600">beautiful</span> designs.</h2>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-white">
+        <div class="container mx-auto p-5">
+            <div class="lg:flex justify-between p-8 bg-blue-100 rounded-lg overflow-hidden">
+                <div class="flex lg:w-1/2 w-full flex-wrap content-center overflow-hidden items-center">
+                    <div class="flex w-full flex-wrap *:text-3xl *:font-bold items-center gap-x-3">
+                        <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                        <p>Startup</p>
+                    </div>
+                    <div class="flex flex-wrap *:capitalize *:my-5">
+                        <h4 class="text-2xl md:text-5xl">
+                            Powerfully Simple Email <br> Template Builder
+                        </h4>
+                        <p class="text-xl opacity-80 w-4/5">
+                            Postcards is how you design email newsletters that shine, in a fraction of the time, with
+                            one-click exports to every ESP.
+                        </p>
+                        <span class="md:mx-2 opacity-80 md:w-1/3"> <i class="bi text-green-500 bi-check-circle"></i>
+                            Drag&Drop WYSIWYG Builde</span>
+                        <span class="md:mx-5 opacity-80 md:w-1/3"> <i class="bi text-green-500 bi-check-circle"></i>
+                            Collaborate with Teammates</span>
+                        <div class=" flex w-full *:capitalize *:font-bold *:mx-5 ">
+                            <button class="bg-green-500  text-white md:px-4 text-sm md:py-2 p-2 rounded-2xl">open
+                                app</button>
+                            <button
+                                class="md:px-4 md:py-2 md:rounded-2xl p-2 text-sm  text-green-500 border border-green-500 hover:text-white hover:bg-green-500 transition duration-200">leran
+                                more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <figure class=" md:rotate-12 md:hue-rotate-90  shadow-2xl md:translate-y-48 md:translate-x-32">
+                        <img src="img/s1.webp" alt="">
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="w-full bg-white">
+        <div class="container mx-auto p-5">
+            <div class=" mt-10">
+                <div class="md:flex *:p-8 justify-between gap-x-3 mt-10 ">
+                    <div class="rounded-3xl overflow-hidden md:w-1/2 bg-blue-100">
+                        <div class="flex w-full flex-wrap *:text-3xl *:font-bold items-center gap-x-3">
+                            <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                            <p>Slides</p>
+                        </div>
+                        <div class="flex flex-wrap  *:capitalize *:my-5">
+                            <h4 class="text-3xl">
+                                Website Builder for <br>
+                                Animated Static Websites
+                            </h4>
+                            <p class="text-xl opacity-80 w-4/5">
+                                In Slides, you can tell an unforgettable story. Bring your website vision to life with
+                                smooth animations and bold creative.
+                            </p>
+                            <span class="md:mx-2 opacity-80 md:w-1/3"> <i class="bi text-blue-500 bi-check-circle"></i>
+                                Edit the Content and Media</span>
+                            <span class="md:mx-5 opacity-80 md:w-1/3"> <i class="bi text-blue-500 bi-check-circle"></i>
+                                Built-in Modules and Examples</span>
+                            <div class=" flex w-full *:capitalize *:font-bold *:mx-5 ">
+                                <button class="bg-blue-500 text-sm  text-white p-2 md:px-4  md:py-2 rounded-2xl">open
+                                    app</button>
+                                <button
+                                    class=" md:px-4  md:py-2 text-sm rounded-2xl p-2  text-blue-500 border border-blue-500 hover:text-white hover:bg-blue-500 transition duration-200">leran
+                                    more</button>
+                            </div>
+                            <figure
+                                class=" md:rotate-12  md:hue-rotate-90 scale-90 md:translate-x-10 translate-y-10 shadow-2xl ">
+                                <img src="img/s2.webp" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl my-5 md:my-0 overflow-hidden md:w-1/2 bg-blue-100">
+                        <div class="flex w-full flex-wrap *:text-3xl *:font-bold items-center gap-x-3">
+                            <i class="bi cursor-pointer bi-emoji-wink text-2xl"></i>
+                            <p>Startup</p>
+                        </div>
+                        <div class="flex flex-wrap  *:capitalize *:my-5">
+                            <h4 class="text-3xl">Drag & Drop Bootstrap <br>Template Builder</h4>
+                            <p class="text-xl opacity-80 w-4/5">
+                                With Startup, every developer is more productive. Publish perfect, responsive landing
+                                pages faster, with a simple drag-and-drop interface.
+                            </p>
+                            <span class="md:mx-2 opacity-80 md:w-1/3"> <i class="bi text-blue-500 bi-check-circle"></i>
+                                Bootstrap 5 Based Templates</span>
+                            <span class="md:mx-5 opacity-80 md:w-1/3"> <i class="bi text-blue-500 bi-check-circle"></i>
+                                Drag&Drop WYSIWYG Builder</span>
+                            <div class=" flex w-full *:capitalize *:font-bold *:mx-5 ">
+                                <button
+                                    class="bg-blue-500  text-white text-sm md:px-4  md:py-2  p-2 md:rounded-2xl">open
+                                    app</button>
+                                <button
+                                    class=" md:px-4  md:py-2  md:rounded-2xl text-sm text-blue-500 p-2 border border-blue-500 hover:text-white hover:bg-blue-500 transition duration-200">leran
+                                    more</button>
+                            </div>
+                            <figure
+                                class=" md:rotate-12 md:hue-rotate-90 scale-90 md:translate-x-10 translate-y-10 shadow-2xl ">
+                                <img src="img/s3.webp" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-black bg-opacity-90">
+        <div class="container mx-auto  p-5">
+            <h4 class="text-center text-2xl md:text-5xl text-white font-bold my-10">Templates to help you flow, grow &
+                make customers happy.</h4>
+            <div class="md:flex justify-between items-center gap-x-5  *:p-8 ">
+                <div
+                    class="w-full max-w-4xl border border-opacity-40 border-gray-400 mx-auto mt-10 overflow-hidden relative rounded-3xl">
+                    <div class="slider ">
+                        <img src="img/s1.webp" alt=" 1" class="object-cover w-full h-[400px]">
+                        <img src="img/s4.webp" alt=" 2" class="object-cover w-full h-[400px]">
+                        <img src="img/s5.webp" alt=" 3" class="object-cover w-full h-[400px]">
+                        <img src="img/s6.webp" alt=" 4" class="object-cover w-full h-[400px]">
+                        <img src="img/s7.webp" alt=" 5" class="object-cover w-full h-[400px]">
+                        <img src="img/s8.webp" alt=" 6" class="object-cover w-full h-[400px]">
+                        <img src="img/s9.webp" alt=" 7" class="object-cover w-full h-[400px]">
+                        <img src="img/s10.webp" alt="8" class="object-cover w-full h-[400px]">
+                        <img src="img/s2.webp" alt="9" class="object-cover w-full h-[400px]">
+                    </div>
+                </div>
+                <div class="mt-10 md:mt-0">
+                    <div class=" *:text-white *:my-6 ">
+                        <button class="bg-blue-500 md:bg-green-500 px-3 py-2 rounded-sm md:px-10">Email
+                            Templates</button>
+                        <h5 class="text-4xl">Create email newsletter designs that customers can’t wait to read.</h5>
+                        <p class="text-lg opacity-70">Get started faster with gorgeous, pre-designed templates, ready to
+                            export straight to your marketing tool.</p>
+                        <button
+                            class="py-3 px-6 border md:px-10 md:py4 rounded-full hover:bg-white hover:text-black capitalize font-bold">browse
+                            Email Templates</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ///////////end part 1 -->
+            <div class="md:flex justify-between mt-20 items-center gap-x-5  *:p-8 ">
+                <div class="mt-10 md:mt-0">
+                    <div class=" *:text-white *:my-6 ">
+                        <button class="bg-blue-500 px-3 py-2 rounded-sm md:px-10">Email Templates</button>
+                        <h5 class="text-4xl">Build websites that look like the best brands in the business.</h5>
+                        <p class="text-lg opacity-70">Choose from a huge library of flexible, conversion-focussed
+                            templates to build stunning websites faster.</p>
+                        <button
+                            class="py-3 px-6 border md:px-10 md:py4 rounded-full hover:bg-white hover:text-black capitalize font-bold">browse
+                            Email Templates</button>
+                    </div>
+                </div>
+                <div
+                    class="w-full max-w-4xl border border-opacity-40 border-gray-400 mx-auto mt-10 overflow-hidden relative rounded-3xl">
+                    <div class="slider ">
+                        <img src="img/a1.webp" alt=" 1" class="object-cover w-full h-[400px]">
+                        <img src="img/a2.webp" alt=" 2" class="object-cover w-full h-[400px]">
+                        <img src="img/a3.webp" alt=" 3" class="object-cover w-full h-[400px]">
+                        <img src="img/a4.webp" alt=" 4" class="object-cover w-full h-[400px]">
+                        <img src="img/a5.webp" alt=" 5" class="object-cover w-full h-[400px]">
+                        <img src="img/a6.webp" alt=" 6" class="object-cover w-full h-[400px]">
+                        <img src="img/a7.webp" alt=" 7" class="object-cover w-full h-[400px]">
+                        <img src="img/a8.webp" alt="8" class="object-cover w-full h-[400px]">
+                        <img src="img/a9.webp" alt="9" class="object-cover w-full h-[400px]">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="w-full bg-white">
+        <div class="container mx-auto mt-10 p-5">
+            <div class=" md:p-8">
+                <div class="w-full">
+                    <h4 class=" md:text-5xl text-center font-bold">Designmodo products just <p class="text-red-800">
+                            make sense.</p>
+                    </h4>
+                </div>
+                <div
+                    class="w-full *:bg-blue-200 *:w-full gap-x-5 *:rounded-xl *:my-10 *:lg:my-0 items-center justify-between *:p-5 p-8 lg:flex ">
+                    <div class=" *:my-5">
+                        <i class="bi text-4xl bi-box-arrow-in-up"></i>
+                        <h3 class="md:text-4xl text-2xl font-bold capitalize">Pre-designed Modules</h3>
+                        <p class="md:text-2xl text-lg">Choose what you need, drag and drop it, and you’re ready to go.
+                        </p>
+                    </div>
+                    <div class=" *:my-5">
+                        <i class="bi text-4xl bi-magic"></i>
+                        <h3 class="md:text-4xl text-2xl font-bold capitalize">7.2 hours</h3>
+                        <p class="md:text-2xl text-lg">average time saved creating an email template with Postcards.</p>
+                    </div>
+                    <div class=" *:my-5">
+                        <i class="bi text-4xl bi-camera"></i>
+                        <h3 class="md:text-4xl text-2xl font-bold capitalize">500 hours</h3>
+                        <p class="md:text-2xl text-lg">total average time saved per year by Designmodo clients.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="w-full bg-blue-100">
+        <div class=" container mx-auto my-10 p-5">
+            <div class="p-8 md:flex *:my-8 *:md:my-0 justify-center  items-center">
+                <div class="bg-blue-200 flex ">
+                    <figure class="mx-4">
+                        <img class="scale-125" src="img/slace.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="flex justify-center">
+                    <p class="p-5 text-justify mx-4 text-2xl md:text-4xl ">
+                        20+ integrations to speed up your workflow, including MailChimp, HubSpot, Brevo, Klaviyo,
+                        Constant Contact, Zoho, SendGrid, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-black">
+        <div class="container mx-auto my-10 p-5">
+            <div class="p-8 ">
+                <div>
+                    <p class="md:text-5xl text-2xl text-white text-center">Designmodo is built for you.</p>
+                </div>
+                <div class=" *:text-white *:my-5 flex justify-center  md:justify-between  p-5 items-center gap-x-3 md:mx-5 my-10">
+                    <div class="text-center flex justify-center">
+                        <figure>
+                            <img src="img/d1.svg" alt="">
+                            <figcaption class=" mt-5 font-bold">For Entrepreneurs</figcaption>
+                        </figure>
+                    </div>
+                    <div class="text-center flex justify-center">
+                        <figure>
+                            <img src="img/d2.svg" alt="">
+                            <figcaption class=" mt-5 font-bold">For Developers</figcaption>
+                        </figure>
+                    </div>
+                    <div class="text-center flex justify-center">
+                        <figure>
+                            <img src="img/d3.svg" alt="">
+                            <figcaption class=" mt-5 font-bold">For Designers</figcaption>
+                        </figure>
+                    </div>
+                    <div class="text-center flex justify-center">
+                        <figure>
+                            <img src="img/d4.svg" alt="">
+                            <figcaption class=" mt-5 font-bold">For Marketers</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full ">
+        <div class="container mx-auto p-5 bg-blue-100 rounded-3xl">
+            <div>
+                <p class="md:text-5xl text-2xl">Powerfully simple apps that anyone can use.</p>
+                <p class="my-5">Growing businesses around the world — from freelancers and startups to scale-ups and
+                    enterprises <br> use Designmodo to save time on design and make customers happy.</p>
+            </div>
+            <div class="p-5">
+                <ul
+                    class="flex menu md:bg-white *:cursor-pointer  rounded-3xl my-10 justify-center items-center *:text-sm lg:w-1/2 lg:gap-x-5">
+                    <li class="hover:bg-slate-300 list hover:rounded-full p-2">startups</li>
+                    <li class="hover:bg-slate-300 list hover:rounded-full p-2">designs</li>
+                    <li class="hover:bg-slate-300 list hover:rounded-full p-2">marketers</li>
+                    <li class="hover:bg-slate-300 list hover:rounded-full p-2">Developers</li>
+                    <li class="hover:bg-slate-300 list hover:rounded-full p-2"> enterprises</li>
+                </ul>
+            </div>
+            <div class=" *:font-serif my-20 overflow-hidden">
+                <div class=" car ">
+                    <div class="md:flex *:md:w-1/2 gap-x-5">
+                        <div class="">
+                            <figure class="">
+                                <img class="rounded-lg" src="img/q1.webp" alt="q1">
+                            </figure>
+                        </div>
+                        <div class=" lg:*:my-10 my-2">
+                            <h5 class="md:text-5xl text-2xl"> Jacob </h5>
+                            <p class="md:text-2xl">“Using Startup was one of the key decisions that contributed to
+                                Rezi’s
+                                early success. The value is unmatched for young startups.”</p>
+                            <div class="">
+                                <p>
+                                    Jacob JacquetChief
+                                </p>
+                                <p>Operating Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" car ">
+                    <div class="md:flex  *:md:w-1/2 gap-x-5">
+                        <div class="">
+                            <figure class="">
+                                <img class="rounded-lg" src="img/q2.webp" alt="q1">
+                            </figure>
+                        </div>
+                        <div class=" lg:*:my-10 my-2">
+                            <h5 class="md:text-5xl text-2xl"> marvel</h5>
+                            <p class="md:text-2xl">“We were looking for something that gave our marketing team more
+                                control over email layouts without having to deal with the complicated module builder in
+                                Hubspot. Postcards is super simple to use and means we can quickly create different
+                                emails for different segments.”</p>
+                            <div class="">
+                                <p class="capitalize">
+                                    Murat Mutlu
+                                </p>
+                                <p class="capitalize">Co-Founder/CEO of MARVEL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" car ">
+                    <div class="md:flex  *:md:w-1/2 gap-x-5">
+                        <div class="">
+                            <figure class="">
+                                <img class="rounded-lg" src="img/q3.webp" alt="q1">
+                            </figure>
+                        </div>
+                        <div class=" lg:*:my-10 my-2">
+                            <h5 class="md:text-5xl text-2xl"> blockchain.com</h5>
+                            <p class="md:text-2xl">“Postcards transformed our email game—scaled team efficiency,
+                                improved CTR by 8%, and simplified design, all at an unbeatable cost. Empowering our
+                                team with an intuitive email builder. Boosted CTR, saved time, and unleashed creativity
+                                effortlessly.”</p>
+                            <div class="">
+                                <p class="capitalize">Indi Pollard</p>
+                                <p class="capitalize">Head of Growth Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" car ">
+                    <div class="md:flex  *:md:w-1/2 gap-x-5">
+                        <div class="">
+                            <figure class="">
+                                <img class="rounded-lg" src="img/q4.webp" alt="q1">
+                            </figure>
+                        </div>
+                        <div class=" lg:*:my-10 my-2">
+                            <h5 class="md:text-5xl text-2xl"> alpine</h5>
+                            <p class="md:text-2xl">“The Slides framework is an easy-to-use tool for creating websites.
+                                It allows anyone to create a sleek landing page in a few minutes. All you need to do is
+                                choose an appropriate design from the list of predefined slides.”</p>
+                            <div class="">
+                                <p class="capitalize">
+                                    jerad alpine
+                                </p>
+                                <p class="capitalize">Web developerr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" car ">
+                    <div class="md:flex  *:md:w-1/2 gap-x-5">
+                        <div class="">
+                            <figure class="">
+                                <img class="rounded-lg" src="img/q5.webp" alt="q1">
+                            </figure>
+                        </div>
+                        <div class=" lg:*:my-10 my-2">
+                            <h5 class="md:text-5xl text-2xl">thumbprint</h5>
+                            <p class="md:text-2xl">“Postcards is an awesome app. It has a gorgeous, user-friendly
+                                interface, and the dynamic builder lets us create stunning email marketing and
+                                transactional emails for big-brand clients with ease. It's a game-changer, allowing our
+                                team to shine without needing web developers or graphic designers!”</p>
+                            <div class=" *:capitalize">
+                                <p>
+                                    Tod Ellington
+                                </p>
+                                <p> Chief Operating Officer of Thumbprint</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-black opacity-90">
+        <div class="container mx-auto p-5 my-10">
+            <div class="p-8">
+                <div class=" *:text-white">
+                    <p class="capitalize md:text-5xl font-serif font-bold text-2xl">Helpful articles</p>
+                    <p class="my-5 text-xl opacity-60 md:w-1/2 md:text-2xl">Get even better at web design, email
+                        newsletter design and email marketing with our guides, showcases, and tutorials.</p>
+                    <button
+                        class="py-3 px-6 my-5 border md:px-10 md:py4 rounded-full hover:bg-white hover:text-black capitalize font-bold">browse
+                        article</button>
+                </div>
+                <div class="md:flex gap-x-5 ">
+                    <div class=" *:my-5">
+                        <figure class="">
+                            <img class="rounded-xl" src="img/p1.jpg" alt="">
+                        </figure>
+                        <button class="px-4 capitalize bg-orange-400 text-white rounded py-2">email design</button>
+                        <p class="text-white opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, blanditiis.</p>
+                        <button class="px-4 capitalize text-white rounded py-2">email design</button>
+                    </div>
+                    <div class=" *:my-5">
+                        <figure class="">
+                            <img class="rounded-xl" src="img/p2.jpg" alt="">
+                        </figure>
+                        <button class="px-4 capitalize bg-orange-400 text-white rounded py-2">website design</button>
+                        <p class="text-white opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, blanditiis.</p>
+                        <button class="px-4 capitalize text-white rounded py-2">website design</button>
+                    </div>
+                    <div class=" *:my-5">
+                        <figure class="">
+                            <img class="rounded-xl" src="img/p3.jpg" alt="">
+                        </figure>
+                        <button class="px-4 capitalize bg-orange-400 text-white rounded py-2">email marketing</button>
+                        <p class="text-white opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, blanditiis.</p>
+                        <button class="px-4 capitalize text-white rounded py-2">email marketing</button>
+                    </div>
+                    <div class=" *:my-5">
+                        <figure class="">
+                            <img class="rounded-xl" src="img/p4.jpg" alt="">
+                        </figure>
+                        <button class="px-4 capitalize bg-blue-400 text-white rounded py-2"> design</button>
+                        <p class="text-white opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, blanditiis.</p>
+                        <button class="px-4 capitalize text-white rounded py-2"> design</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full bg-white">
+        <div class="container mx-auto p-5">
+            <div class=" p-8">
+                <div class=" flex my-10 justify-center items-center">
+                    <i class="bi cursor-pointer bi-emoji-wink text-5xl"></i>
+                </div>
+                <div class="md:flex justify-between  my-10 gap-x-10">
+                    <div>
+                        <p class="text-xl font-bold">Company</p>
+                        <ul class=" *:capitalize *:my-4">
+                            <li><a class="text-blue-500" href="">About Us</a></li>
+                            <li><a class="text-blue-500" href="">Contact Us</a></li>
+                            <li><a class="text-blue-500" href="">Newsletter</a></li>
+                            <li><a class="text-blue-500" href="">Privacy</a></li>
+                            <li><a class="text-blue-500" href="">Terms</a></li>
+                            <li><a class="text-blue-500" href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold">Products</p>
+                        <ul class=" *:capitalize *:my-4">
+                            <li><a class="text-blue-500" href="">Postcards: Email Builder</a></li>
+                            <li><a class="text-blue-500" href="">Slides: Website Generator</a></li>
+                            <li><a class="text-blue-500" href="">Startup: Bootstrap Builder</a></li>
+                            <li><a class="text-blue-500" href="">Static Pages</a></li>
+                            <li><a class="text-blue-500" href="">Affiliate Program</a></li>
+                            <li><a class="text-blue-500" href="">Help Articles</a></li>
+                            <li><a class="text-blue-500" href="">Email Signature Templates</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold">Templates</p>
+                        <ul class=" *:capitalize *:my-4">
+                            <li><a class="text-blue-500" href="">Gmail Email Templates</a></li>
+                            <li><a class="text-blue-500" href="">Outlook Email Templates</a></li>
+                            <li><a class="text-blue-500" href="">Mailchimp Email Templates</a></li>
+                            <li><a class="text-blue-500" href="">HubSpot Email Templates</a></li>
+                            <li><a class="text-blue-500" href="">Klaviyo Email Templates</a></li>
+                            <li><a class="text-blue-500" href="">Email Marketing Templates</a></li>
+                            <li><a class="text-blue-500" href="">Email Newsletter Templates</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold">Resources</p>
+                        <ul class=" *:capitalize *:my-4">
+                            <li><a class="text-blue-500" href="">Designmodo Experts</a></li>
+                            <li><a class="text-blue-500" href="">Email Templates</a></li>
+                            <li><a class="text-blue-500" href="">Website Templates</a></li>
+                            <li><a class="text-blue-500" href="">Bootstrap Templates</a></li>
+                            <li><a class="text-blue-500" href="">Siter.io: No-Code Website Builder</a></li>
+                            <li><a class="text-blue-500" href="">Pulsetic: Website Uptime Monitor</a></li>
+                            <li><a class="text-blue-500" href="">Static.app: Static Website Hosting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex *:mx-2 *:cursor-pointer *:text-4xl *:text-blue-700 mt-20 justify-center items-center">
+                    <i class="bi hover:text-black bi-instagram"></i>
+                    <i class="bi hover:text-black bi-linkedin"></i>
+                    <i class="bi hover:text-black bi-telegram"></i>
+                    <i class="bi hover:text-black bi-whatsapp"></i>
+                    <i class="bi hover:text-black bi-github"></i>
+                </div>
+                <div class="flex justify-center *:text-sm *:opacity-60 my-10 items-center">
+                    <p>Designmodo Inc. 50 N 1st St,<br> Brooklyn, NY 11249, United States
+                        <br>
+                        by: vahidsolimani
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+</body>
+<script>
+    //////////////////menu for nav/////////////////
+    const span = document.querySelectorAll('.boxx>span')
+    const menu = document.getElementById('menu')
+    let flag = 1
+
+    function mybox() {
+        if (flag % 2) {
+
+            span[0].style.transform = 'rotate(-30deg)'
+            span[1].style.transform = 'rotate(30deg)'
+            menu.style.transform = 'translateX(0)'
+        } else {
+            span[0].style.transform = 'rotate(0deg)'
+            span[1].style.transform = 'rotate(0deg)'
+            menu.style.transform = 'translateX(-300%)'
+        }
+
+        flag++
+    }
+    /////////////////end menu for nav////////////
+
+
+    ///////////////part 2 see
+    let boxwon = 0
+
+    function tosee() {
+        boxwon++
+        document.getElementById("boxwon").innerHTML = boxwon
+        document.getElementById("svgwon").style.fill = 'white'
+    }
+    let boxtow = 0
+
+    function notseeing() {
+        boxtow++
+        document.getElementById("boxtow").innerHTML = boxtow
+        document.getElementById("svgtow").style.fill = 'white'
+    }
+    ///////////////end part 2 see 
+    function hideAllBoxes() {
+        const boxes = document.querySelectorAll('.box');
+        boxes.forEach(function (box) {
+            box.classList.add('hidden');
+        });
+    }
+
+
+    function showBox(itemNumber) {
+        hideAllBoxes();
+        const box = document.getElementById(`box-${itemNumber}`);
+        box.classList.remove('hidden')
+    }
+    ////////////////////part main /////////////////////////
+    const xlist = document.querySelectorAll('.menu>li')
+    console.log(xlist)
+    const ylist = document.querySelectorAll('.car')
+    console.log(ylist)
+    xlist.forEach((val, i) => {
+        val.addEventListener('click', () => {
+            ylist.forEach(y => y.classList.remove('active'))
+            ylist[i].classList.add('active')
+        })
+
+    })
+    ///////////////////////end part main//////////////////
+</script>
+
+</html>
